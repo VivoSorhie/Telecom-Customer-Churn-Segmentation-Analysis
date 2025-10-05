@@ -1,55 +1,48 @@
-Project: Finding and Fixing Customer Churn
-Last Updated: October 2025
+# Project: Finding and Fixing Customer Churn
 
-The Bottom Line: Can we predict which customers are about to leave and save them before it's too late? Yes. This project built a system that does exactly that.
-The Problem: Happy Customers Stay, Unhappy Customers Leave
-Every time a customer leaves for a competitor, the company loses money. The big question is: can we spot an unhappy customer before they decide to cancel their service?
+> **The Bottom Line:** This project builds a system that accurately predicts which customers are about to leave, allowing the business to proactively save them.
 
-This project dives into a telecom company's customer data to find the hidden patterns of customer churn.
+---
 
-Our Two-Step Approach
-We tackled this problem with a simple, two-part strategy:
+### The Goal
+To spot unhappy customers *before* they cancel their service by finding hidden patterns in telecom data.
 
-First, we answered "WHO are our customers?" We used machine learning to sort the entire customer base into distinct groups or "personas." This helps us understand the different types of customers we have.
+---
 
-Then, we answered "WHO is going to leave?" We built a predictive model that acts as an "early-warning system." It learns the warning signs from past data and then flags current customers who are at high risk of churning in the future.
+### Our Approach
+Our strategy involved two key steps:
+1.  **Customer Segmentation:** We first answered "WHO are our customers?" by using machine learning to sort them into distinct personas.
+2.  **Churn Prediction:** We then answered "WHO is going to leave?" by building an "early-warning system" to flag high-risk customers.
 
-What We Discovered: The Story in the Data
-Our analysis uncovered a very clear story about why customers leave. It's not random; there are specific red flags.
+---
 
-The Biggest Warning Signs of Churn
-Frustration is the #1 Driver: The single biggest predictor of a customer leaving is the number of times they call customer service. A customer who calls for help 4 or more times has a 50.7% chance of churning. This is a critical tipping point.
+### Key Findings: The Warning Signs of Churn
+Our analysis found three clear red flags:
+- **Frustration is the #1 Driver:** A customer making **4 or more service calls** has a **50.7% chance of churning**. This is the critical tipping point.
+- **The International Plan is a Problem:** Customers with this plan churn at a rate of **42.2%**, nearly 3x the company average.
+- **Voice Mail is a Sign of Loyalty:** Customers with a Voice Mail plan are the most loyal, with a very low churn rate of only **7.4%**.
 
-The International Plan is a Problem: Customers who sign up for the International Plan are a major flight risk. They leave at a rate of 42.2%, which is almost three times the company average. Something about this plan—its price, quality, or value—is not working.
+---
 
-Voice Mail is a Sign of Loyalty: On the flip side, customers with a Voice Mail plan are your most loyal. They have a very low churn rate of only 7.4%. These are your stable, happy customers.
+### The Result: A High-Performance Prediction Model
+We built a **Random Forest model** that acts as a highly accurate early-warning system.
+- **Effectiveness:** It finds **75%** of all customers who are going to churn.
+- **Efficiency:** Its predictions are **95%** accurate.
 
-The Result: A Highly Accurate Early-Warning System
-We built and fine-tuned a Random Forest model that can predict churn with incredible accuracy.
+#### The Business Value
+The model's biggest strength is its efficiency. It allows for a targeted retention strategy:
+> **By contacting just the top 20% of customers flagged by our model, we can reach and save 80% of ALL customers who were going to leave.**
 
-How good is it? Imagine you have a list of all your customers who are going to churn next month. Our model can find 75% of them (high recall) and be 95% sure about its predictions (high precision).
+---
 
-The Real Business Value
-The model's biggest strength is its efficiency. This chart proves it:
+### Recommendations
+1.  **Deploy the Model:** Generate a daily list of at-risk customers for the retention team.
+2.  **Create a "Code Red" Alert:** Immediately escalate any customer making their 4th service call to a senior agent.
+3.  **Fix the International Plan:** Launch an urgent review of this product's pricing, quality, and value.
+4.  **Reward Loyal Customers:** Nurture the Voice Mail user base and attract more customers like them.
 
-This Gains Chart shows that by using our model to create a "most wanted" list of at-risk customers, the company can be incredibly efficient:
+---
 
-By contacting just the top 20% of customers flagged by our model, we can reach and have a chance to save 80% of ALL customers who were going to leave.
-
-This means the company can focus its retention efforts where they will have the biggest impact, saving time and money.
-
-The Action Plan: What To Do Next
-Based on these findings, the path forward is clear:
-
-Deploy the Model: Start using the model today to generate a daily list of at-risk customers for the retention team to contact.
-
-Create a "Code Red" Alert: Any customer making their 4th service call should be immediately flagged and escalated to a senior support agent to solve their problem.
-
-Fix the International Plan: Launch an urgent review of this product. Find out why it's driving your customers away.
-
-Reward Your Loyal Customers: Recognize that your Voice Mail users are your loyal base. Learn more about them and find ways to keep them happy.
-
-Technologies Used
-Python
-
-Libraries: Pandas, Scikit-learn, Seaborn, Matplotlib
+### Tech Stack
+- **Language:** Python
+- **Libraries:** Pandas, Scikit-learn, Seaborn, Matplotlib
