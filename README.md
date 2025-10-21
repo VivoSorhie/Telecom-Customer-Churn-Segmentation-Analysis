@@ -22,7 +22,7 @@ A full-cycle machine learning project that predicts which customers are about to
 
 ---
 
-## 📊 Project Overview
+## Project Overview
 
 Customer churn is one of the biggest threats to profitability in the telecom industry. This project builds a **predictive system** that identifies high-risk customers *before* they cancel their service — enabling the business to act early, reduce churn, and improve customer satisfaction.
 
@@ -30,7 +30,7 @@ By combining **segmentation** and **predictive modeling**, we bridge the gap bet
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
@@ -41,7 +41,7 @@ By combining **segmentation** and **predictive modeling**, we bridge the gap bet
 
 ---
 
-## 🔍 Methodology
+## Methodology
 
 1. **Data Exploration & Cleaning**
    - Handled missing values, normalized numerical variables, and encoded categorical ones.
@@ -58,7 +58,7 @@ By combining **segmentation** and **predictive modeling**, we bridge the gap bet
 
 ---
 
-## 🤖 Model Performance
+## Model Performance
 
 The **Random Forest** model achieved excellent precision and recall trade-offs, making it a robust *early-warning system*.
 
@@ -69,7 +69,7 @@ The **Random Forest** model achieved excellent precision and recall trade-offs, 
 
 This means the model successfully captures the majority of customers *at risk of leaving* while keeping false alarms low.
 
-![ROC-AUC Curve](roc_auc_churn.png)
+![ROC-AUC Curve](telecom_auc_curve.png)
 
 ---
 
@@ -83,15 +83,15 @@ A high-performing model needs to prove it’s both **accurate** and **trustworth
 
 ---
 
-## 💡 Key Findings & Actionable Insights
+## Key Findings & Actionable Insights
 
 ### 1. The Red Flags of Churn
 
 | Predictor | Impact on Churn | Insight |
 |------------|----------------|----------|
-| **Service Calls ≥ 4** | 🚨 50.7% churn probability | Indicates unresolved frustration — top operational red flag. |
-| **International Plan** | ⚠️ 42.2% churn rate | Nearly 3× the company average — likely a product issue. |
-| **Voice Mail Plan** | 💚 7.4% churn rate | Loyal customer group — retention goldmine. |
+| **Service Calls ≥ 4** | 50.7% churn probability | Indicates unresolved frustration — top operational red flag. |
+| **International Plan** | 42.2% churn rate | Nearly 3× the company average — likely a product issue. |
+| **Voice Mail Plan** | 7.4% churn rate | Loyal customer group — retention goldmine. |
 
 ---
 
@@ -101,7 +101,7 @@ By mapping churn probability to customer lifetime value, we identified where the
 - Top 20% of customers at risk account for **80% of potential revenue loss**.
 - Targeting only these customers could **cut churn costs by 60%** while minimizing marketing spend.
 
-![Churn Risk Distribution](cumulative_gains.png)
+![Churn Risk Distribution](telecom_cumulative_gains.png)
 
 ---
 
@@ -116,7 +116,7 @@ Each group demands a tailored intervention strategy rather than one-size-fits-al
 
 ---
 
-## 🎯 Strategic Recommendations
+## Strategic Recommendations
 
 1. **Deploy the Prediction Model**
    - Automate daily scoring to flag at-risk customers and notify retention teams.
@@ -132,7 +132,7 @@ Each group demands a tailored intervention strategy rather than one-size-fits-al
 
 ---
 
-## ⚙️ How to Run This Project
+## How to Run This Project
 
 1. **Clone the Repository:**
    ```bash
