@@ -136,7 +136,7 @@ Each group demands a tailored intervention strategy rather than one-size-fits-al
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/VivoSorhie/Telecom-Customer-Churn-Prediction.git
+   https://github.com/VivoSorhie/Telecom-Customer-Churn-Prediction.git
    ```
 
 2. **Install Dependencies:**
