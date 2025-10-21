@@ -26,7 +26,7 @@ Our analysis found three clear red flags:
 
 ### The Result: A High-Performance Prediction Model
 We built a **Random Forest model** that acts as a highly accurate early-warning system.
-- **Effectiveness:** It finds **75%** of all customers who are going to churn.
+- **Effectiveness:** It finds **77%** of all customers who are going to churn.
 - **Efficiency:** Its predictions are **95%** accurate.
 
 #### The Business Value
