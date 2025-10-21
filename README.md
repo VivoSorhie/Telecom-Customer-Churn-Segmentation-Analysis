@@ -1,4 +1,4 @@
-# Telecom Customer Churn Prediction: Finding and Fixing Customer Attrition
+# Telecom Customer Churn Reduction via Predictive Modeling 
 
 A full-cycle machine learning project that predicts which customers are about to leave — turning data into a proactive **retention strategy** that saves real revenue.
 
